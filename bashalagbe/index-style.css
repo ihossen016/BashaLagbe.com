@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+    font-family: 'Lora', serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.navbar-right {
+    float: right;
+}
+.banar{
+	width: 100%;
+	height: 350px;
+	border: 1px solid rgba(255, 0, 0, 0);
+	text-align: center;
+	background-image: url(images/baner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banar h1{
+	padding-top: 10%;
+	font-size: 45px;
+	color: black;
+	float: right;
+	padding-right: 15px;
+}
+.extra{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	padding-top: 15px;
+}
+.extra #ct {
+    font-size: 35px;
+    color: black;
+}
+.extra #ex{
+	width: 155px;
+	height: 40px;
+	margin-right: 50px;
+	margin-top: 10px;
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: #3a9ef4;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+.extra #ex:hover{
+	background-color: #3a82f4;
+}
+
+.fas{
+    padding-right: 5px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.page-wrapper a:hover{ /*universal styling for a tag inside wrapper*/
+    color: #F05053;
+    transition: 0.5s all ease-in;
+}
+.page-wrapper{
+    min-height: 100%;
+}
+
+/* Content */
+
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+.content .main-content{
+    width: 95%;
+    float: left;
+	padding-left: 5%;
+	margin-top: 5%;
+}
+.content .main-content .post{
+    width: 95%;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+.content .main-content .post .post-image{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-radius: 5px;
+}
+.content .main-content .post .post-preview {
+    width: 75%;
+    padding: 10px;
+    float: right;
+	padding-left: 25px;
+}
+.content .main-content .post .post-preview h2{
+	font-size: 35px;
+}
+.content .main-content .recent-post-title{
+    margin: 20px;
+    font-family: bell mt;
+    font-size: 45px;
+    color: coral;
+}
+
+.content .main-content .post .read-more{ /*btn*/
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: crimson;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+	transition: 0.5s all ease-out;
+	float: right;
+}
+.btn:hover{
+    background-color: darkred;
+    color: white !important; /*to remove universal styling of a tag*/
+    transition: 0.5s all ease-in;
+    box-shadow: 1rem 1rem 1rem -1rem black;
+}
+
+/* //Content */
+
+/*Footer*/
+
+.footer{
+    background-color: #000000;
+    height: 400px;
+    position: relative; 
+}
+.footer .footer-content{
+    height: 360px;
+	display: flex;
+}
+.footer .footer-content .footer-section{
+	flex: 1;
+	padding: 18px;
+}
+.footer .footer-content .footer-section .logo-text{
+	font-family: 'Bangers',cursive;
+	color: white;
+	font-size: 40px;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+}
+.footer .footer-content .footer-section h2{
+	font-family: bell mt;
+	color: white;
+	font-size: 35px;
+}
+.footer .footer-content .footer-section p{
+	color: white;
+}
+.footer .footer-content .footer-section .contact span{
+	display: block;
+	font-size: 20px;
+	color: aliceblue;
+	margin-bottom: 8px;
+}
+.footer .footer-content .footer-section .socials{
+	text-align: center;
+}
+.footer .footer-content .footer-section .socials a{
+	font-size: 30px;
+	color: white;
+	margin-right: 15px;
+	padding: 5px;
+}
+.footer .footer-content .links ul a{
+	color: aliceblue;
+	display: block;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+.footer .footer-content .links ul a:hover{
+	margin-left: 20px;
+	color: white;
+	transition: all 0.3s;
+}
+.footer .footer-content form{
+	width: 400px;
+	height: 250px;
+	position: absolute;
+}
+.footer .footer-content form .contact-input{
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	border: 1px solid white;
+	font-size: 17px;
+	display: block;
+	color: black;
+	border-radius: 5px;
+	background: white;
+}
+.footer .footer-content form .e1{
+	margin-bottom: 15px;
+}
+.footer .footer-content form .e2{
+	padding-top: 15px;
+	height: 100px;
+}
+.footer .footer-content form .btn-big{
+	width: 100%;
+	height: 40px;
+	font-family: bell mt;
+	font-size: 25px;
+	border-radius: 5px;
+	border: 0;
+	background-color: #4CAEC3;
+	color: white;
+	cursor: pointer;
+	display: block;
+	margin-top: 10px;
+	transition: all 0.3s;
+}
+.footer .footer-content form .btn-big:hover{
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.7);
+    transform: scale(0.95);
+}
+.footer .footer-bottom{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(2, 20, 29, 0.59);
+    color: white;
+    text-align: center;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+/*// Footer*/

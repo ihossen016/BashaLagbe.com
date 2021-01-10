@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333B3D;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.active {
+    background-color: #008CBA;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    padding-left: 25px;
+    width: 20%;
+    color: #CCDDED;
+}
+
+.mailbox {
+    margin: 25px auto 100px;
+    position: relative;
+    background: #CCDDED;
+    border-radius: 0px 5px 0px 0px;
+    width: 95%;
+    display: block;
+}
+
+.mailbox a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: #EEE;
+    width: 200px;
+}
+
+.nav a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a.active {
+    background: #CCDDED;
+}
+
+.nav a:hover {
+    background: #CCDDED;
+    color: black;
+}
+
+.messages {
+    padding: 10px 10px 10px 210px;
+    width: 100%;
+}
+
+.message {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: #bbd0e4;
+    border-radius: 5px;
+}
+
+.message .sender {
+    display: block;
+    position: absolute;
+    left: 40px;
+    color: #000;
+    font-weight: bold;
+    width: 90px;
+}
+
+.message .title {
+    display: inline-block;
+    padding-left: 150px;
+    width: 100%;
+}
+
+.message .delete {
+    position: absolute;
+    right: 10px;
+}
+
+.click {
+    display: block;
+    position: relative;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.click:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.message:hover {
+    background-color: #3D9FC4;
+    color: white;
+}
